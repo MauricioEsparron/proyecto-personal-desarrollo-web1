@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #34495E; 
+    background-image: url(../imagenes/BACKGROUNG3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+#contenedor{
+    width: 95%;
+    margin: 30px auto;
+}
+#contenedor h1{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+/* header */
+header{
+    background-color: #2ECC71;
+    border-radius: 20px;
+}
+header h1{
+    padding: 20px;
+    text-align: center;
+    color: #F7F9F9;
+}
+header img{
+    width: 100%;
+    vertical-align: bottom;
+}
+/* nav */
+nav{
+    width: 100%;
+    background-color:#2ECC71;
+    text-align: center;
+   
+}
+
+nav ul{
+    list-style: none;
+    display: inline-block;
+    padding:18px;
+}
+
+nav ul li{
+    float: left;
+    margin: 20px;
+}
+
+nav ul li a {
+    color: #F7F9F9;
+    margin: auto;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 18px;
+}
+
+nav ul li a:hover{
+    color: #F4D03F;
+    /* firefox */
+    -moz-transition: font-size 100ms linear 0s;
+    /* Chrome / Safari */
+    -webkit-transition: font-size 100ms linear 0s;
+    /* Default */
+    transition: font-size 100ms linear 0s;
+    font-size: 35px;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  
+  .menu li{
+    float: inline-end;
+    padding: 0;
+    background-color: #2ECC71;
+
+  }
+  
+  .menu li a{
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .menu li:hover ul{
+    opacity: 1;
+    padding: 0;
+    visibility: visible;
+  }
+  .menu #desplegable{
+    display: block;
+    margin: 24px;
+  }
+  .menu #desplegable li{
+    padding: 20px;
+  }
+  .menu #desplegable li a{
+    margin: 10px;
+  }
+/* main */
+main{
+    display:flex;
+}
+aside{
+    width: 25%;
+    padding: 20px;
+    background-color: #CACFD2;
+}
+/* aside */
+aside h3{
+    font-size: 25px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+/* aside de la izquierda */
+
+aside a:hover{
+    background-color: rgb(216, 212, 212);
+      /* firefox */
+      -moz-transition: font-size 100ms linear 0s;
+      /* Chrome / Safari */
+      -webkit-transition: font-size 100ms linear 0s;
+      /* Default */
+      transition: font-size 100ms linear 0s;
+      font-size: 25px;
+}
+.pagina{
+    background-color: rgb(216, 212, 212);
+}
+.informacion{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.informacion figure{
+    width: 100%;
+}
+.informacion img{
+    width:33%
+}
+.informacion p{
+    text-align: justify;
+    margin: 0px 100px;
+    font-size: 20px;
+    color: #283747;
+}
+
+/* aside derecho */
+.subtitulo{
+    border-bottom: 2px  solid black;
+    margin-bottom: 40px;
+}
+#recomendaciones{
+    width: 100%;
+}
+/* section */
+section{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #CACFD2;
+}
+section figure{
+    width: 45%;
+    margin: 5px;
+}
+.titulo{
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+figure p{
+    font-size: 25px;
+}
+section figure:hover{
+    background-color: #A6ACAF; 
+}
+section figure img{
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+}
+.centrar p{
+    text-align: center;
+}
+section figure figcaption{
+    margin: 10px;
+    text-align: center;
+}
+section img{
+    border-radius: 20px;
+}
+figcaption p{
+    margin: 30px ;
+    font-size: 20px;
+    text-align: justify;
+}
+figcaption a{
+    color: rgb(1, 73, 141);
+}
+figcaption h2{
+    text-align: center;
+    font-size: 30px;
+}
+figcaption ul {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+ #individual2 {
+    width: 100%;
+}
+figcaption ul li{
+    text-align: left;
+}
+textarea{
+    width: 100%;
+}
+#video{
+    width: 100%;
+    padding: 10px 0px;
+}
+#video iframe{
+    width: 50%;
+    padding: 10px;
+    margin: 20px 50px 20px 300px;
+}
+#video h2{
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+
+/* footer */
+footer div {
+    margin: 10px;
+    padding: 20px;
+    /* border: 2px solid white; */
+}
+footer p{
+    margin: 10px;
+    color: #F0F3F4;
+    font-size: 20px;
+    /* border: 2px solid black;  */
+}
+footer a {
+    color: #F0F3F4;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 20px;
+}
+#fila a:hover {
+    color: #F4D03F; 
+    /* firefox */
+    -moz-transition: font-size 100ms linear 0s;
+    /* Chrome / Safari */
+    -webkit-transition: font-size 100ms linear 0s;
+    /* Default */
+    transition: font-size 100ms linear 0s;
+    font-size: 22px;
+}
+#contacto a:hover {
+    color: #F4D03F; 
+    /* firefox */
+    -moz-transition: font-size 100ms linear 0s;
+    /* Chrome / Safari */
+    -webkit-transition: font-size 100ms linear 0s;
+    /* Default */
+    transition: font-size 100ms linear 0s;
+    font-size: 20px;
+}
+/* footer ul {
+    border: 2px solid black;
+} */
+footer{
+    width: 100%;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #2ECC71;
+    display: inline-flex;
+}
+.logo {
+ width: 150px;
+ height: 150px;
+ /* border: 2px solid lightyellow; */
+}
+.logo:hover{
+    box-shadow: 3px 0px 30px rgb(255, 255, 255);
+
+}
+#fila{
+    /* border: 2px solid lightyellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: initial;
+    text-align: justify;
+}
+#fila img{
+    margin-top: 45px;
+}
+#fila h3{
+    font-size: 22px;
+}
+/* .logo:hover{
+    width: 220px;
+    height: 220px;
+} */
+h3 {
+    padding: 40px 0px 40px ;
+    text-align: center;
+    display: block;
+}
+#contacto{
+    margin-left: 10px;
+    width: 30%;
+} 
+.lista2{
+    width: 25%;
+}
+#contacto h3{
+    text-align: center;
+}
+/* .lista {    */
+    /* margin: 0px 0px 0px 250px; */
+/* } */
+.texto {
+    width: 100%;
+}
+#copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.datos {
+    padding: 10px 0px;
+}

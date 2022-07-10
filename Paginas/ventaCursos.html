@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Compras</title>
+    <link href="../css/ventaCursos.css" rel="stylesheet">
+    <script src="../js/ventaCursos.js"></script>
+
+</head>
+
+<body onload="carrucel()">
+
+
+
+    <div id="contenedor">
+
+
+        <header>
+            <h1>Sección de compras</h1>
+        </header>
+
+
+        <main>
+
+            <section style="width: 100%;">
+
+                <figure style="width: 50%;">
+                    <figcaption>
+
+                        <div class="Imagenes">
+                            <img id="cursos" src="../imagenes/curso1.jpg" alt="cSharp">
+                            <div style="padding-top: 45px;" class="datos">
+                                <!-- <label for="">Precio: $100</label>
+                                <br>
+                                <label for="">Duración : 36 Horas</label>
+                                <br>-->
+                                <a href="../Paginas/cursos.html"> <button type="submit">← Regresar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <div id="bloque2" style="width: 50%; ">
+                    <div style="width: 50%;margin-top: 40px; ">
+                        <label><Strong>Cantidad :</Strong></label>
+                        <input type="text" id="cantidad" placeholder="Cantidad" />
+                    </div>
+                    <div id="seleccion">
+                        <label><Strong>Producto :</Strong></label>
+                        <select id="productos" onchange="mostrarPrecio()">
+                            <option id="vacio"></option>
+                            <option value="a">C ++</option>
+                            <option value="b">C #</option>
+                            <option value="c">Html</option>
+                            <option value="d">Base de datos</option>
+                            <option value="e">Java Script</option>
+                            <option value="f">Java</option>
+                        </select>
+                        <div style="width: 50%;margin-top: 20px; ">
+                            <label><Strong>Precio :</Strong></label>
+                        </div>
+                        <div>
+                            <div><button class="btn btn-primary btn-block btn-large"
+                                    onclick="adicionarCarrito(); return false">Añadir al Carrito</button></div>
+                        </div>
+                    </div>
+
+
+
+                    <div Style id="tabla">
+
+                        <table id="miTabla">
+                            <tr>
+                                <th>Curso</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Precio con IGV</th>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+
+        </main>
+
+
+        <footer>
+            <div id="fila">
+                <a href="../Paginas/nosotros.html"><img class="logo" src="../imagenes/Menor igual.jpeg" alt="logo"></a>
+
+
+                <div id="contacto">
+                    <h3>Contacto</h3>
+                    <HR size="5" width="100%" color="#2ECC71">
+                    <br>
+                    <ul>
+                        <li>
+                            <p class="datos"><a href="mailto:RocketTeam@gmail.com">Envíanos un correo</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p class="datos"><a href="tel:999999999">Telef: 999-999-999</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lista1">
+                    <h3 class="columna">Mapa de sitio</h3>
+                    <HR size="5" width="100%" color="#2ECC71">
+                    <br>
+                    <ul>
+                        <li><a href="../Paginas/Index.html">Inicio</a></li>
+                        <li><a href="../Paginas/ProgramacionWeb.html">Web</a></li>
+                        <li><a href="../Paginas/ProgramacionMobile.html">Mobile</a></li>
+                        <li><a href="../Paginas/ProgramacionDeSistemasOperativos.html">Sistemas Operativos</a></li>
+                        <li><a href="../Paginas/ProgramacionDesktop.html">Desktop</a></li>
+                    </ul>
+                </div>
+                <div class="lista2">
+                    <h3 class="columna">Información</h3>
+                    <HR size="5" width="100%" color="#2ECC71">
+                    <br>
+                    <ul>
+                        <li><a href="../Paginas/nosotros.html">¿Quienes Somos?</a></li>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#mision">Visión</a></li>
+                        <li><a href="#mision">Objetivo</a></li>
+                    </ul>
+                </div>
+                <div class="lista3">
+                    <h3 class="columna">Destacado</h3>
+                    <HR size="5" width="100%" color="#2ECC71">
+                    <br>
+                    <ul>
+                        <li><a href="../Paginas/novedades.html">Novedades</a></li>
+                        <li><a href="../Paginas/relacionado.html">Relacionado</a></li>
+                        <li><a href="../Paginas/cursos.html">Cursos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="texto">
+                <p>Esta es una página web va dirigida a todo aquel que busque información Relacionada a la Programación
+                    y tecnología en general.</p>
+
+            </div>
+            <br>
+            <HR size="5" width="100%" color="#2ECC71">
+            <div id="copyright">
+                <p>Copyright © Lima, Perú - 2022. Todos los Derechos Reservados. </p>
+                <a target="_blank" href="https://twitter.com/i/flow/login"><img src="../imagenes/twitter.png"></a>
+                <a target="_blank" href="https://www.youtube.com/"><img src="../imagenes/youtube.png"></a>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
